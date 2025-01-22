@@ -14,3 +14,4 @@
 *.pptx
 .DS_Store
 *~
+.dist.txt
