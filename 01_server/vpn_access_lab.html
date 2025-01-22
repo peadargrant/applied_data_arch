@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>VPN access lab</title>
+  <title>VPN lab</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -26,7 +26,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">VPN access lab</h1>
+<h1 class="title">VPN lab</h1>
 </header>
 <p>The VPN service enables you to connect to some resources on campus,
 mainly a shared linux server, but later on some more machines, from
@@ -38,8 +38,8 @@ from it when finished working.</p>
 <p>A VPN is essentially the same as theoretically plugging a long
 network cable into one of the network jacks in the lab. It tunnels
 traffic through your computers existing WiFi or ethernet connection via
-the internet to a gateway located in DkIT. Your computer has an
-additional virtual IP address that is within a DkIT range.</p>
+the internet to a gateway located in DkIT. Your computer temporarily
+gets an additional virtual IP address that is within a DkIT range.</p>
 <h1 id="requirements">Requirements</h1>
 <p>To connect from outside or from WiFi you will need:</p>
 <ul>
@@ -100,8 +100,24 @@ id="task-4-test-connectivity-first-time-only-and-in-case-of-issues">Task
 on. You should see the message printed in green:</p>
 <pre><code>your connection is ok.</code></pre>
 <p>If this doesn’t appear then ask for help.</p>
-<h2 id="work-using-the-vpn">Work using the VPN</h2>
+<h1 id="task-5-using-the-vpn">Task 5: Using the VPN</h1>
 <p>At this point you can use the resources you need through the VPN.</p>
+<h2 id="connect-over-ssh-to-the-server">Connect over SSH to the
+server</h2>
+<p>Here we’ll connect to the shared server named <code>dblab</code>
+using the command:</p>
+<pre><code>ssh yourname@10.200.172.60</code></pre>
+<p>Connect using the <strong>server username</strong> assigned to you
+and the temporary password given in class. Note that in UNIX generally
+you don’t get asterisks for password entry. It looks like the entry is
+being ignored but it is going in!</p>
+<h2 id="changing-your-server-password">Changing your server
+password</h2>
+<p>Change your server password using the command</p>
+<pre><code>passwd</code></pre>
+<p>Following the prompts that appear. Similar to the logon password, you
+don’t get asterisks for password entry. It looks like the entry is being
+ignored but it is going in!</p>
 <h2 id="task-5-disconnect">Task 5: Disconnect</h2>
 <p>When you are finished working with the VPN please disconnect to
 conserve capacity for your fellow students.</p>

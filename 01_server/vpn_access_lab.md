@@ -1,4 +1,4 @@
-% VPN access lab
+% VPN lab
 
 The VPN service enables you to connect to some resources on campus, mainly a shared linux server, but later on some more machines, from outside the lab. 
 
@@ -10,7 +10,7 @@ You'll have to repeat most of the steps here to connect to the lab VPN and disco
 
 A VPN is essentially the same as theoretically plugging a long network cable into one of the network jacks in the lab.
 It tunnels traffic through your computers existing WiFi or ethernet connection via the internet to a gateway located in DkIT.
-Your computer has an additional virtual IP address that is within a DkIT range. 
+Your computer temporarily gets an additional virtual IP address that is within a DkIT range.
 
 
 # Requirements
@@ -82,10 +82,31 @@ You should see the message printed in green:
 If this doesn't appear then ask for help.
 
 
-## Work using the VPN
+# Task 5: Using the VPN
 
 At this point you can use the resources you need through the VPN.
 
+
+## Connect over SSH to the server
+
+Here we'll connect to the shared server named `dblab` using the command:
+
+	ssh yourname@10.200.172.60
+	
+Connect using the **server username** assigned to you and the temporary password given in class.
+Note that in UNIX generally you don't get asterisks for password entry.
+It looks like the entry is being ignored but it is going in!
+
+
+## Changing your server password
+
+Change your server password using the command
+
+	passwd
+
+Following the prompts that appear.
+Similar to the logon password, you don't get asterisks for password entry.
+It looks like the entry is being ignored but it is going in!
 
 
 ## Task 5: Disconnect
