@@ -1,0 +1,16 @@
+*.pdf
+*.html
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.tof
+*.toc
+*.lof
+*.lot
+*.fls
+*.docx
+*.xlsx
+*.pptx
+.DS_Store
+*~

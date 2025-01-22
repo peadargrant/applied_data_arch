@@ -1,0 +1,20 @@
+{
+    "components":
+    {
+	"ca": {
+	    "points": 100,
+	    "subcomponents": {
+		"ca1": {
+		    "points": 60,
+		    "description": "Design and implementation of data storage system to facilitate data acquisition and processing incorporating formative iterative steps",
+		    "week": 12
+		},
+		"ca2": {
+		    "points": 40,
+		    "description": "Lab-based test incorporating practical and electronic quiz components during exam period",
+		    "week": 14
+		}
+	    }
+	}
+    }
+}
